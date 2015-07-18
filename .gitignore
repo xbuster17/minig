@@ -1,0 +1,15 @@
+# binaries
+/android/bin
+/android/gen
+/android/obj
+/android/libs
+/src/lodepng.o
+/src/*.o
+minig
+
+#sdl2 for android
+/android/jni/SDL2/*
+/android/jni/SDL2_mixer/*
+
+# backup
+/src/.bak/*

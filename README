@@ -1,0 +1,22 @@
+MINIGAME grid creatures 0.2
+
+with sound!
+move with WASD-+/touchscreen
+aim and shoot with mouse/touchscreen
+
+reqs: make
+    linux?, SDL2, SDL2_mixer, OpenGL 3.0, GLEW.
+    -or-
+    android12+(3.1+): OpenGL ES 2.0+(w/VAO_ext), SDL2(android/jni/SDL2 and SDL2_mixer should link to your SDL2 source folders), android sdk, ndk, ant, java, ...?
+
+android:
+$ make droid
+
+project names and descriptions are in :
+    /android/AndroidManifest.xml
+    /android/build.xml
+    /android/makefile
+app name:
+    /android/res/values/strings.xml
+screen prevented from sleeping in: 
+    /android/src/org/libsdl/app/SDLActivity.java L:99
