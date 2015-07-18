@@ -50,7 +50,7 @@ droid:
 	@printf $(mk_d_p) > $(mk_d_path)
 	@echo $(mk_d_src) >> $(mk_d_path)
 	@printf $(mk_d_s) >> $(mk_d_path)
-	@touch -d "0001-01-01 00:00:00.000000000 +0000" $(mk_d_path)
+	@touch -d "1970-01-01 00:00:00" $(mk_d_path)
 	@cd android && make
 	$(DONETAG)
 
